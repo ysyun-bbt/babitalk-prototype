@@ -337,6 +337,44 @@ body {
   margin-left: 4px;
 }
 
+/* ── Attr Table (강남언니 레퍼런스: 스킨보톡스 2cc / 원산지 수입 / 브랜드 제오민) ── */
+.attr-table {
+  margin: 6px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  background: #f7f7f9;
+  border-radius: 6px;
+}
+
+.attr-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 18px;
+}
+
+.attr-label {
+  font-size: 11px;
+  color: #a3a3af;
+  flex-shrink: 0;
+  min-width: 52px;
+}
+
+.attr-value {
+  font-size: 11px;
+  color: #313142;
+  font-weight: 600;
+}
+
+.attr-unit-price {
+  font-size: 11px;
+  color: #a3a3af;
+  margin-top: 2px;
+  text-align: right;
+}
+
 /* ── Badge Group (Figma: Badge Group — 가격 아래, 별점 위) ── */
 .badge-group {
   display: flex;

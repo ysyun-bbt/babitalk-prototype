@@ -20,6 +20,11 @@ const PRODUCTS = [
     clinic: "뷰티클리닉 강남점", verified: true,
     name: "매몰법 쌍꺼풀 (양안) + 눈매교정",
     tags: ["마취크림", "당일예약", "비절개"],
+    attrs: [
+      { label: "수술방법", value: "매몰법" },
+      { label: "마취방법", value: "마취크림" },
+      { label: "절개여부", value: "비절개" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -35,6 +40,11 @@ const PRODUCTS = [
     clinic: "라인성형외과", verified: true,
     name: "절개법 쌍꺼풀 (양안) 자연유착",
     tags: ["수면마취", "흉터최소화"],
+    attrs: [
+      { label: "수술방법", value: "절개법" },
+      { label: "마취방법", value: "수면마취" },
+      { label: "절개여부", value: "절개" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -49,6 +59,10 @@ const PRODUCTS = [
     clinic: "아이디병원 강남", verified: false,
     name: "눈매교정 + 앞트임 (양안) 패키지",
     tags: ["당일예약", "1:1 상담"],
+    attrs: [
+      { label: "수술방법", value: "눈매교정+앞트임" },
+      { label: "마취방법", value: "마취크림" },
+    ],
     badges: [
       { label: "카톡상담", type: "outline", icon: "💬" },
       { label: "기획이름들", type: "outline", icon: "🔥" },
@@ -64,6 +78,11 @@ const PRODUCTS = [
     clinic: "JK성형외과", verified: true,
     name: "콧대+코끝 교정 패키지 (실리콘+귀연골)",
     tags: ["전신마취", "5년 보증"],
+    attrs: [
+      { label: "보형물", value: "실리콘+귀연골" },
+      { label: "원산지", value: "국내" },
+      { label: "마취방법", value: "전신마취" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -79,6 +98,11 @@ const PRODUCTS = [
     clinic: "리쥬란클리닉 압구정", verified: true,
     name: "코끝성형 (귀연골 이식) 자연스러운 라인",
     tags: ["수면마취", "당일가능"],
+    attrs: [
+      { label: "보형물", value: "귀연골" },
+      { label: "원산지", value: "국내" },
+      { label: "마취방법", value: "수면마취" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -94,6 +118,11 @@ const PRODUCTS = [
     clinic: "더블유클리닉 강남", verified: true,
     name: "실리프팅 (민트실 60가닥) 콜라겐 재생",
     tags: ["무통마취", "즉각효과", "점심시술"],
+    attrs: [
+      { label: "실 종류", value: "민트실" },
+      { label: "가닥수", value: "60가닥" },
+      { label: "원산지", value: "수입" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -109,6 +138,12 @@ const PRODUCTS = [
     clinic: "에스테틱 청담", verified: false,
     name: "울쎄라 600샷 얼굴 전체 리프팅",
     tags: ["즉각리프팅", "1회효과"],
+    attrs: [
+      { label: "시술종류", value: "울쎄라" },
+      { label: "샷수", value: "600샷" },
+      { label: "원산지", value: "수입" },
+    ],
+    unitPrice: "1샷당 2,000원",
     badges: [
       { label: "카톡상담", type: "outline", icon: "💬" },
     ],
@@ -123,6 +158,12 @@ const PRODUCTS = [
     clinic: "미인클리닉 강남", verified: true,
     name: "사각턱 보톡스 (100u) + 종아리 보톡스",
     tags: ["당일예약", "점심시술", "무통"],
+    attrs: [
+      { label: "스킨보톡스", value: "100u" },
+      { label: "원산지", value: "수입" },
+      { label: "브랜드", value: "보툴렉스" },
+    ],
+    unitPrice: "1u당 3,000원",
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -138,6 +179,13 @@ const PRODUCTS = [
     clinic: "스킨클리닉 압구정", verified: true,
     name: "히알루론산 필러 1cc 코/이마/턱 선택",
     tags: ["즉시회복", "자연결과"],
+    attrs: [
+      { label: "시술종류", value: "히알루론산 필러" },
+      { label: "용량", value: "1cc" },
+      { label: "원산지", value: "수입" },
+      { label: "브랜드", value: "쥬비덤" },
+    ],
+    unitPrice: "1cc당 350,000원",
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "기획이름들", type: "outline", icon: "🔥" },
@@ -153,6 +201,12 @@ const PRODUCTS = [
     clinic: "피부과학클리닉", verified: true,
     name: "피코슈어 토닝 5회 패키지 (전얼굴)",
     tags: ["색소/잡티", "당일예약", "점심가능"],
+    attrs: [
+      { label: "레이저종류", value: "피코슈어" },
+      { label: "시술횟수", value: "5회" },
+      { label: "원산지", value: "수입" },
+    ],
+    unitPrice: "1회당 136,000원",
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -168,6 +222,11 @@ const PRODUCTS = [
     clinic: "닥터클리닉 청담", verified: true,
     name: "아쿠아필링 + 수분공급 앰플 (1회)",
     tags: ["즉각보습", "트러블개선"],
+    attrs: [
+      { label: "시술종류", value: "아쿠아필링" },
+      { label: "시술횟수", value: "1회" },
+      { label: "원산지", value: "국내" },
+    ],
     badges: [
       { label: "카톡상담", type: "outline", icon: "💬" },
     ],
@@ -182,6 +241,11 @@ const PRODUCTS = [
     clinic: "365mc 강남본점", verified: true,
     name: "복부+옆구리 지방흡입 (롯소법)",
     tags: ["수면마취", "사후관리 3회"],
+    attrs: [
+      { label: "시술방법", value: "롯소법" },
+      { label: "부위", value: "복부+옆구리" },
+      { label: "마취방법", value: "수면마취" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -198,6 +262,12 @@ const PRODUCTS = [
     clinic: "바노바기성형외과", verified: true,
     name: "가슴성형 (모티바 라운드) 겨드랑이 절개",
     tags: ["전신마취", "10년보장"],
+    attrs: [
+      { label: "보형물", value: "모티바 라운드" },
+      { label: "절개위치", value: "겨드랑이" },
+      { label: "원산지", value: "수입" },
+      { label: "브랜드", value: "모티바" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -213,6 +283,11 @@ const PRODUCTS = [
     clinic: "미소치과 강남", verified: true,
     name: "전문가 치아미백 (줌화이트닝) 1시간",
     tags: ["즉각효과", "점심가능", "2-3톤 업"],
+    attrs: [
+      { label: "시술방법", value: "줌화이트닝" },
+      { label: "소요시간", value: "1시간" },
+      { label: "효과", value: "2-3톤 업" },
+    ],
     badges: [
       { label: "미리결제", type: "fill" },
       { label: "카톡상담", type: "outline", icon: "💬" },
@@ -246,6 +321,24 @@ function StarIcon({ filled }) {
     <svg width="11" height="11" viewBox="0 0 24 24" fill={filled ? "#ffc107" : "#e0e0e0"}>
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
     </svg>
+  );
+}
+
+// 강남언니 레퍼런스: 시술 속성값 테이블 (스킨보톡스 2cc / 원산지 수입 / 브랜드 제오민)
+function AttrTable({ attrs, unitPrice }) {
+  if (!attrs || attrs.length === 0) return null;
+  return (
+    <div className="attr-table">
+      {attrs.map((a, i) => (
+        <div key={i} className="attr-row">
+          <span className="attr-label">{a.label}</span>
+          <span className="attr-value">{a.value}</span>
+        </div>
+      ))}
+      {unitPrice && (
+        <div className="attr-unit-price">{unitPrice}</div>
+      )}
+    </div>
   );
 }
 
@@ -329,6 +422,7 @@ function ProductCard({ product, onToggleSave }) {
             </span>
           ))}
         </div>
+        <AttrTable attrs={product.attrs} unitPrice={product.unitPrice} />
         <div className="price-row">
           {product.discountRate > 0 && (
             <>
