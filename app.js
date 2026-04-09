@@ -20,6 +20,11 @@ const PRODUCTS = [
     clinic: "뷰티클리닉 강남점", verified: true,
     name: "매몰법 쌍꺼풀 (양안) + 눈매교정",
     tags: ["마취크림", "당일예약", "비절개"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 990000, discountRate: 35,
     rating: 4.9, reviewCount: 1284,
     emoji: "👁️", colorClass: "thumb-color-1",
@@ -30,6 +35,10 @@ const PRODUCTS = [
     clinic: "라인성형외과", verified: true,
     name: "절개법 쌍꺼풀 (양안) 자연유착",
     tags: ["수면마취", "흉터최소화"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+    ],
     originalPrice: 1200000, discountRate: 20,
     rating: 4.8, reviewCount: 876,
     emoji: "✨", colorClass: "thumb-color-2",
@@ -40,6 +49,10 @@ const PRODUCTS = [
     clinic: "아이디병원 강남", verified: false,
     name: "눈매교정 + 앞트임 (양안) 패키지",
     tags: ["당일예약", "1:1 상담"],
+    badges: [
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 800000, discountRate: 0,
     rating: 4.7, reviewCount: 532,
     emoji: "💎", colorClass: "thumb-color-5",
@@ -51,6 +64,11 @@ const PRODUCTS = [
     clinic: "JK성형외과", verified: true,
     name: "콧대+코끝 교정 패키지 (실리콘+귀연골)",
     tags: ["전신마취", "5년 보증"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 3500000, discountRate: 15,
     rating: 4.9, reviewCount: 2103,
     emoji: "👃", colorClass: "thumb-color-3",
@@ -61,6 +79,10 @@ const PRODUCTS = [
     clinic: "리쥬란클리닉 압구정", verified: true,
     name: "코끝성형 (귀연골 이식) 자연스러운 라인",
     tags: ["수면마취", "당일가능"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+    ],
     originalPrice: 1800000, discountRate: 10,
     rating: 4.8, reviewCount: 641,
     emoji: "🌟", colorClass: "thumb-color-4",
@@ -72,6 +94,11 @@ const PRODUCTS = [
     clinic: "더블유클리닉 강남", verified: true,
     name: "실리프팅 (민트실 60가닥) 콜라겐 재생",
     tags: ["무통마취", "즉각효과", "점심시술"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 550000, discountRate: 40,
     rating: 4.7, reviewCount: 3421,
     emoji: "🔮", colorClass: "thumb-color-5",
@@ -82,6 +109,9 @@ const PRODUCTS = [
     clinic: "에스테틱 청담", verified: false,
     name: "울쎄라 600샷 얼굴 전체 리프팅",
     tags: ["즉각리프팅", "1회효과"],
+    badges: [
+      { label: "카톡상담", type: "outline", icon: "💬" },
+    ],
     originalPrice: 1200000, discountRate: 25,
     rating: 4.6, reviewCount: 987,
     emoji: "💫", colorClass: "thumb-color-1",
@@ -93,6 +123,11 @@ const PRODUCTS = [
     clinic: "미인클리닉 강남", verified: true,
     name: "사각턱 보톡스 (100u) + 종아리 보톡스",
     tags: ["당일예약", "점심시술", "무통"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 300000, discountRate: 50,
     rating: 4.8, reviewCount: 5670,
     emoji: "💉", colorClass: "thumb-color-2",
@@ -103,6 +138,10 @@ const PRODUCTS = [
     clinic: "스킨클리닉 압구정", verified: true,
     name: "히알루론산 필러 1cc 코/이마/턱 선택",
     tags: ["즉시회복", "자연결과"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 450000, discountRate: 22,
     rating: 4.7, reviewCount: 2130,
     emoji: "🩸", colorClass: "thumb-color-6",
@@ -114,6 +153,11 @@ const PRODUCTS = [
     clinic: "피부과학클리닉", verified: true,
     name: "피코슈어 토닝 5회 패키지 (전얼굴)",
     tags: ["색소/잡티", "당일예약", "점심가능"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 680000, discountRate: 30,
     rating: 4.9, reviewCount: 4102,
     emoji: "🌸", colorClass: "thumb-color-3",
@@ -124,6 +168,9 @@ const PRODUCTS = [
     clinic: "닥터클리닉 청담", verified: true,
     name: "아쿠아필링 + 수분공급 앰플 (1회)",
     tags: ["즉각보습", "트러블개선"],
+    badges: [
+      { label: "카톡상담", type: "outline", icon: "💬" },
+    ],
     originalPrice: 180000, discountRate: 0,
     rating: 4.6, reviewCount: 892,
     emoji: "💧", colorClass: "thumb-color-4",
@@ -135,6 +182,11 @@ const PRODUCTS = [
     clinic: "365mc 강남본점", verified: true,
     name: "복부+옆구리 지방흡입 (롯소법)",
     tags: ["수면마취", "사후관리 3회"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 4200000, discountRate: 12,
     rating: 4.8, reviewCount: 3201,
     emoji: "✂️", colorClass: "thumb-color-1",
@@ -146,6 +198,10 @@ const PRODUCTS = [
     clinic: "바노바기성형외과", verified: true,
     name: "가슴성형 (모티바 라운드) 겨드랑이 절개",
     tags: ["전신마취", "10년보장"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+    ],
     originalPrice: 6500000, discountRate: 8,
     rating: 4.9, reviewCount: 1543,
     emoji: "🌺", colorClass: "thumb-color-5",
@@ -157,6 +213,11 @@ const PRODUCTS = [
     clinic: "미소치과 강남", verified: true,
     name: "전문가 치아미백 (줌화이트닝) 1시간",
     tags: ["즉각효과", "점심가능", "2-3톤 업"],
+    badges: [
+      { label: "미리결제", type: "fill" },
+      { label: "카톡상담", type: "outline", icon: "💬" },
+      { label: "기획이름들", type: "outline", icon: "🔥" },
+    ],
     originalPrice: 280000, discountRate: 45,
     rating: 4.7, reviewCount: 1876,
     emoji: "😁", colorClass: "thumb-color-2",
@@ -185,6 +246,20 @@ function StarIcon({ filled }) {
     <svg width="11" height="11" viewBox="0 0 24 24" fill={filled ? "#ffc107" : "#e0e0e0"}>
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
     </svg>
+  );
+}
+
+function BadgeGroup({ badges }) {
+  if (!badges || badges.length === 0) return null;
+  return (
+    <div className="badge-group">
+      {badges.map((b, i) => (
+        <span key={i} className={`badge-chip badge-chip--${b.type}`}>
+          {b.icon && <span className="badge-chip__icon">{b.icon}</span>}
+          {b.label}
+        </span>
+      ))}
+    </div>
   );
 }
 
@@ -263,6 +338,7 @@ function ProductCard({ product, onToggleSave }) {
           )}
           <span className="price-final">{formatPrice(finalPrice)}</span>
         </div>
+        <BadgeGroup badges={product.badges} />
         <div className="rating-row">
           <span className="stars">{"★".repeat(Math.round(product.rating))}</span>
           <span className="rating-score">{product.rating}</span>

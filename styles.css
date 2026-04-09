@@ -337,6 +337,44 @@ body {
   margin-left: 4px;
 }
 
+/* ── Badge Group (Figma: Badge Group — 가격 아래, 별점 위) ── */
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 5px 0 3px;
+}
+
+.badge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.badge-chip--fill {
+  background: #604aff;
+  color: #fff;
+  border: none;
+}
+
+.badge-chip--outline {
+  background: transparent;
+  color: #484760;
+  border: 1px solid #dadadf;
+}
+
+.badge-chip__icon {
+  font-size: 10px;
+  line-height: 1;
+}
+
 /* ── Empty State ── */
 .empty-state {
   text-align: center;
