@@ -294,7 +294,7 @@ html, body {
 .thumb-img-wrap {
   width: 90px;
   height: 90px;
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
   background: #e8e8e8;
   position: relative;
@@ -470,22 +470,50 @@ html, body {
 .badge-chip {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  height: 20px;
-  padding: 0 6px;
+  gap: 2px;
+  height: 18px;
+  padding: 0 4px;
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   white-space: nowrap;
 }
 .badge-chip--fill {
-  background: var(--primary);
-  color: var(--white);
+  background: #f4f3ff;
+  color: var(--primary);
 }
 .badge-chip--outline {
-  background: transparent;
-  color: var(--grey-800);
-  border: 1px solid var(--grey-300);
+  background: var(--white);
+  color: var(--text-900);
+  border: 1px solid var(--grey-200);
+}
+
+/* ── Options Group ── */
+.options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 2px;
+}
+.option-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.option-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-500);
+  white-space: nowrap;
+}
+.option-value {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-900);
+  white-space: nowrap;
 }
 
 /* ── Rating Row ── */

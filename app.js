@@ -18,8 +18,8 @@ const FILTER_CHIPS = [
 ];
 
 // ── Mock Data ──────────────────────────────────────────────
-// picsum.photos/seed/{n}/90/90 으로 카드별 다른 이미지 사용
-function img(n) { return `https://picsum.photos/seed/${n}/90/90`; }
+function img(n)  { return `https://randomuser.me/api/portraits/women/${n % 100}.jpg`; }
+function imgM(n) { return `https://randomuser.me/api/portraits/men/${n % 100}.jpg`; }
 
 const CARDS_BY_TAB = [
   // 0. 추천
@@ -122,16 +122,16 @@ const CARDS_BY_TAB = [
 
   // 7. 남자성형
   [
-    { name: "남자 눈성형 매몰법 쌍꺼풀 자연유착", desc: "자연스러운 남성 눈매 라인 완성", location: "서울 강남구", clinic: "바비톡성형외과", price: 890000, discountRate: 28, img: img(80), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "1,234" },
-    { name: "남자 코성형 매부리코+콧볼 축소", desc: "남성적인 콧대 라인 완성", location: "서울 압구정역", clinic: "JK성형외과", price: 3200000, discountRate: 15, img: img(81), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.9, reviewCount: "987" },
-    { name: "남자 윤곽 수술 사각턱+광대 교정", desc: "강한 이미지 개선, 슬림한 얼굴형", location: "서울 청담동", clinic: "청담성형외과", price: 6500000, discountRate: 10, img: img(82), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "765" },
-    { name: "남자 지방흡입 복부+옆구리 로초 방식", desc: "S라인 복근 라인 완성", location: "서울 강남구", clinic: "365mc강남", price: 3800000, discountRate: 20, img: img(83), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.7, reviewCount: "2,341" },
-    { name: "남자 여유증 수술 샘조직+지방 제거", desc: "남성 가슴 여유증 완전 교정", location: "서울 서초구", clinic: "서울성형외과", price: 2800000, discountRate: 18, img: img(84), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.8, reviewCount: "876" },
-    { name: "남자 쌍꺼풀+앞트임 동시 수술", desc: "또렷하고 시원한 남성 눈매", location: "서울 강남구", clinic: "아이성형외과", price: 1200000, discountRate: 22, img: img(85), badges: [{ label: "미리결제", type: "fill" }, { label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.7, reviewCount: "1,543" },
-    { name: "남자 이마 지방이식 패인 이마 교정", desc: "자가지방으로 자연스러운 볼륨", location: "서울 신사동", clinic: "신사성형외과", price: 2200000, discountRate: 15, img: img(86), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.6, reviewCount: "432" },
-    { name: "남자 귀 수술 박쥐귀·돌출귀 교정", desc: "귀 모양 교정, 자연스러운 형태", location: "서울 강남구", clinic: "강남성형외과", price: 1500000, discountRate: 25, img: img(87), badges: [{ label: "미리결제", type: "fill" }], rating: 4.7, reviewCount: "321" },
-    { name: "남자 피부 레이저 여드름·흉터 개선", desc: "남성 피부 특화 케어 프로그램", location: "서울 역삼역", clinic: "강남피부과의원", price: 320000, discountRate: 35, img: img(88), badges: [{ label: "미리결제", type: "fill" }, { label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "1,876" },
-    { name: "남자 보톡스 사각턱+이마 스타터 패키지", desc: "처음 성형 고민하는 남성 추천", location: "서울 강남구", clinic: "뷰클리닉 강남점", price: 250000, discountRate: 40, img: img(89), badges: [{ label: "미리결제", type: "fill" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.9, reviewCount: "2,109" },
+    { name: "남자 눈성형 매몰법 쌍꺼풀 자연유착", desc: "자연스러운 남성 눈매 라인 완성", location: "서울 강남구", clinic: "바비톡성형외과", price: 890000, discountRate: 28, img: imgM(80), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "1,234" },
+    { name: "남자 코성형 매부리코+콧볼 축소", desc: "남성적인 콧대 라인 완성", location: "서울 압구정역", clinic: "JK성형외과", price: 3200000, discountRate: 15, img: imgM(81), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.9, reviewCount: "987" },
+    { name: "남자 윤곽 수술 사각턱+광대 교정", desc: "강한 이미지 개선, 슬림한 얼굴형", location: "서울 청담동", clinic: "청담성형외과", price: 6500000, discountRate: 10, img: imgM(82), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "765" },
+    { name: "남자 지방흡입 복부+옆구리 로초 방식", desc: "S라인 복근 라인 완성", location: "서울 강남구", clinic: "365mc강남", price: 3800000, discountRate: 20, img: imgM(83), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.7, reviewCount: "2,341" },
+    { name: "남자 여유증 수술 샘조직+지방 제거", desc: "남성 가슴 여유증 완전 교정", location: "서울 서초구", clinic: "서울성형외과", price: 2800000, discountRate: 18, img: imgM(84), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.8, reviewCount: "876" },
+    { name: "남자 쌍꺼풀+앞트임 동시 수술", desc: "또렷하고 시원한 남성 눈매", location: "서울 강남구", clinic: "아이성형외과", price: 1200000, discountRate: 22, img: imgM(85), badges: [{ label: "미리결제", type: "fill" }, { label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.7, reviewCount: "1,543" },
+    { name: "남자 이마 지방이식 패인 이마 교정", desc: "자가지방으로 자연스러운 볼륨", location: "서울 신사동", clinic: "신사성형외과", price: 2200000, discountRate: 15, img: imgM(86), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.6, reviewCount: "432" },
+    { name: "남자 귀 수술 박쥐귀·돌출귀 교정", desc: "귀 모양 교정, 자연스러운 형태", location: "서울 강남구", clinic: "강남성형외과", price: 1500000, discountRate: 25, img: imgM(87), badges: [{ label: "미리결제", type: "fill" }], rating: 4.7, reviewCount: "321" },
+    { name: "남자 피부 레이저 여드름·흉터 개선", desc: "남성 피부 특화 케어 프로그램", location: "서울 역삼역", clinic: "강남피부과의원", price: 320000, discountRate: 35, img: imgM(88), badges: [{ label: "미리결제", type: "fill" }, { label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.8, reviewCount: "1,876" },
+    { name: "남자 보톡스 사각턱+이마 스타터 패키지", desc: "처음 성형 고민하는 남성 추천", location: "서울 강남구", clinic: "뷰클리닉 강남점", price: 250000, discountRate: 40, img: imgM(89), badges: [{ label: "미리결제", type: "fill" }, { label: "🔥기획이름들", type: "outline" }], rating: 4.9, reviewCount: "2,109" },
   ],
 
   // 8. 모발이식
@@ -162,6 +162,126 @@ const CARDS_BY_TAB = [
     { name: "성형외과 1:1 무료 상담 + 시뮬레이션", desc: "전문의와 꼼꼼한 수술 계획 수립", location: "서울 강남구", clinic: "바비톡성형외과", price: 0, discountRate: 0, img: img(109), badges: [{ label: "카톡상담", type: "outline", icon: "💬" }], rating: 4.9, reviewCount: "3,421" },
   ],
 ];
+
+// ── Card Options (동적 생성) ────────────────────────────────
+function getCardOptions(card) {
+  const n = card.name;
+  const p = card.price;
+  const perShots = (shots) => Math.round(p / shots).toLocaleString('ko-KR') + '원';
+
+  if (n.includes('울쎄라')) {
+    const s = (n.match(/(\d+)샷/) || [])[1] || 600;
+    return [{label:'기기',value:'울쎄라'},{label:'샷수',value:`${s}샷`},{label:'1샷당',value:perShots(s)}];
+  }
+  if (n.includes('써마지')) {
+    const s = (n.match(/(\d+)샷/) || [])[1] || 400;
+    return [{label:'기기',value:'써마지 FLX'},{label:'샷수',value:`${s}샷`},{label:'1샷당',value:perShots(s)}];
+  }
+  if (n.includes('슈링크')) {
+    const s = n.includes('600') ? 600 : 200;
+    return [{label:'기기',value:'슈링크 유니버스'},{label:'샷수',value:`${s}샷`},{label:'1샷당',value:perShots(s)}];
+  }
+  if (n.includes('인모드')) {
+    return [{label:'기기',value:'인모드 FX'},{label:'주파수',value:'1MHz'},{label:'부위',value:n.includes('바디') ? '복부' : '전얼굴'}];
+  }
+  if (n.includes('포텐자')) return [{label:'기기',value:'포텐자 RF'},{label:'타입',value:'마이크로니들'},{label:'부위',value:'전얼굴'}];
+  if (n.includes('리니어지')) return [{label:'기기',value:'리니어지'},{label:'타입',value:'선형 고주파'},{label:'부위',value:'전얼굴'}];
+  if (n.includes('올리지오')) return [{label:'기기',value:'올리지오'},{label:'타입',value:'물방울 고주파'},{label:'부위',value:'전얼굴'}];
+  if (n.includes('이지리프트')) return [{label:'기기',value:'이지리프트'},{label:'타입',value:'고주파'},{label:'부위',value:'턱선+하관'}];
+  if (n.includes('써마쿨')) return [{label:'기기',value:'써마쿨'},{label:'타입',value:'고주파'},{label:'부위',value:'눈가+이마+볼'}];
+  if (n.includes('아이리프트')) return [{label:'기기',value:'아이리프트'},{label:'타입',value:'고주파'},{label:'부위',value:'눈가'}];
+
+  if (n.includes('민트실') || n.includes('PDO') || (n.includes('실') && n.includes('리프팅') && !n.includes('레이저'))) {
+    const cnt = (n.match(/(\d+)가닥/) || ['','상담'])[1];
+    return [{label:'실 종류',value:'PDO'},{label:'가닥수',value:cnt==='상담'?cnt:cnt+'가닥'},{label:'유지기간',value:'6~12개월'}];
+  }
+
+  if (n.includes('보톡스') || n.includes('보툴')) {
+    const brand = n.includes('제오민') ? '제오민' : n.includes('나보타') ? '나보타' : '보툴리눔';
+    const parts = n.includes('이마') && n.includes('미간') ? '3부위' : n.includes('사각턱') ? '2부위' : '1부위';
+    return [{label:'브랜드',value:brand},{label:'원산지',value:brand==='제오민'||brand==='나보타'?'수입':'국내'},{label:'시술부위',value:parts}];
+  }
+  if (n.includes('리쥬란')) {
+    const cc = (n.match(/(\d+(?:\.\d+)?)cc/) || ['','3'])[1] + 'cc';
+    return [{label:'성분',value:'연어DNA'},{label:'용량',value:cc},{label:'원산지',value:'국내'}];
+  }
+  if (n.includes('쥬비덤')) return [{label:'브랜드',value:'쥬비덤'},{label:'원산지',value:'미국'},{label:'FDA승인',value:'O'}];
+  if (n.includes('필러') || n.includes('히알')) return [{label:'성분',value:'히알루론산'},{label:'원산지',value:'수입'},{label:'용량',value:'1cc'}];
+
+  if (n.includes('아쿠아필링')) return [{label:'시술',value:'아쿠아필링'},{label:'부위',value:'전얼굴'},{label:'앰플',value:'피부장벽'}];
+
+  if (n.includes('피코슈어') || (n.includes('피코') && n.includes('레이저'))) return [{label:'레이저',value:'피코슈어'},{label:'파장',value:'755nm'},{label:'원산지',value:'미국'}];
+  if (n.includes('엑셀V')) return [{label:'레이저',value:'엑셀V+'},{label:'파장',value:'532/1064nm'},{label:'원산지',value:'미국'}];
+  if (n.includes('프락셀')) return [{label:'레이저',value:'프락셀'},{label:'파장',value:'1550nm'},{label:'원산지',value:'미국'}];
+  if (n.includes('CO2')) return [{label:'레이저',value:'CO2'},{label:'파장',value:'10,600nm'},{label:'원산지',value:'국내'}];
+  if (n.includes('브이빔')) return [{label:'레이저',value:'브이빔 퍼펙타'},{label:'파장',value:'595nm'},{label:'원산지',value:'미국'}];
+  if (n.includes('레이저') && n.includes('토닝')) return [{label:'레이저',value:'토닝+IPL'},{label:'부위',value:'전얼굴'},{label:'횟수',value:'5회'}];
+  if (n.includes('레이저') && n.includes('제모')) return [{label:'레이저',value:'알렉산드라이트'},{label:'부위',value:'2부위'},{label:'원산지',value:'미국'}];
+
+  if (n.includes('엠보') || (n.includes('반영구') && n.includes('눈썹'))) return [{label:'기법',value:'수지침 엠보'},{label:'유지기간',value:'1~2년'},{label:'색소',value:'식물성'}];
+  if (n.includes('아이라인') && n.includes('반영구')) return [{label:'기법',value:'머신'},{label:'유지기간',value:'1~2년'},{label:'색소',value:'식물성'}];
+  if (n.includes('입술') && n.includes('반영구')) return [{label:'기법',value:'머신'},{label:'유지기간',value:'1~2년'},{label:'색상',value:'혈색빛'}];
+  if (n.includes('헤어라인') && n.includes('반영구')) return [{label:'기법',value:'머신'},{label:'유지기간',value:'2~3년'},{label:'색소',value:'식물성'}];
+  if (n.includes('수지침') && n.includes('엠보')) return [{label:'기법',value:'수지침 엠보'},{label:'부위',value:'2부위'},{label:'유지기간',value:'1~2년'}];
+  if (n.includes('Q스위치')) return [{label:'레이저',value:'Q스위치'},{label:'파장',value:'1064nm'},{label:'횟수',value:'1회'}];
+  if (n.includes('문신') && n.includes('제거')) return [{label:'레이저',value:'피코레이저'},{label:'범위',value:'5×5cm'},{label:'횟수',value:'1회'}];
+  if (n.includes('타투') && n.includes('제거')) return [{label:'레이저',value:'피코레이저'},{label:'범위',value:'10cm 이하'},{label:'색소',value:'컬러'}];
+
+  if (n.includes('모티바')) return [{label:'보형물',value:'모티바'},{label:'타입',value:n.includes('에르고')? '에르고노믹스':'라운드'},{label:'보장',value:'10년'}];
+  if (n.includes('벨라겔')) {
+    const cc = (n.match(/(\d+)cc/) || ['','상담'])[1];
+    return [{label:'보형물',value:'벨라겔'},{label:'CC',value:cc==='상담'?cc:cc+'cc'},{label:'보장',value:'10년'}];
+  }
+  if (n.includes('지방이식') && n.includes('가슴')) return [{label:'방법',value:'자가지방'},{label:'용량',value:'100cc↑'},{label:'마취',value:'전신마취'}];
+  if (n.includes('재수술') || n.includes('교체')) return [{label:'방법',value:'보형물 교체'},{label:'마취',value:'전신마취'},{label:'입원',value:'1~2일'}];
+  if (n.includes('하이멘토')) return [{label:'방법',value:'기저부 교정'},{label:'마취',value:'전신마취'},{label:'입원',value:'1일'}];
+  if (n.includes('가슴') && n.includes('축소')) return [{label:'방법',value:'유방축소술'},{label:'마취',value:'전신마취'},{label:'회복',value:'2~4주'}];
+  if (n.includes('하수') || (n.includes('가슴') && n.includes('리프팅'))) return [{label:'방법',value:'거상+이동'},{label:'마취',value:'전신마취'},{label:'입원',value:'1~2일'}];
+  if (n.includes('가슴')) return [{label:'방법',value:'보형물 삽입'},{label:'마취',value:'전신마취'},{label:'회복',value:'1~2주'}];
+
+  if (n.includes('안면거상') || n.includes('미니리프트')) return [{label:'방법',value:'절개 리프팅'},{label:'마취',value:'전신마취'},{label:'회복',value:'2~4주'}];
+  if (n.includes('이마거상') || n.includes('내시경')) return [{label:'방법',value:'내시경'},{label:'마취',value:'전신마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('목') && n.includes('거상')) return [{label:'방법',value:'목선 절개'},{label:'마취',value:'전신마취'},{label:'입원',value:'1~2일'}];
+  if (n.includes('눈 거상') || n.includes('상안검')) return [{label:'방법',value:'절개'},{label:'마취',value:'국소마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('이중턱') && n.includes('절제')) return [{label:'방법',value:'절제+거상'},{label:'마취',value:'수면마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('하안검')) return [{label:'방법',value:'지방 재배치'},{label:'마취',value:'국소마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('중안면')) return [{label:'방법',value:'절개 리프팅'},{label:'마취',value:'전신마취'},{label:'회복',value:'2~3주'}];
+  if (n.includes('복부') && n.includes('피부')) return [{label:'방법',value:'피부 절제'},{label:'마취',value:'전신마취'},{label:'회복',value:'4~6주'}];
+
+  if (n.includes('지방흡입')) return [{label:'방법',value:'로초 기법'},{label:'마취',value:'수면마취'},{label:'회복',value:'2~4주'}];
+  if (n.includes('여유증')) return [{label:'방법',value:'샘조직+지방 제거'},{label:'마취',value:'수면마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('쌍꺼풀') || (n.includes('눈') && !n.includes('거상') && !n.includes('눈썹'))) return [{label:'방법',value:n.includes('매몰')? '매몰법':'절개'},{label:'마취',value:'수면마취'},{label:'회복',value:'3~5일'}];
+  if (n.includes('코성형') || (n.includes('코') && n.includes('남자'))) return [{label:'방법',value:'절개'},{label:'마취',value:'수면마취'},{label:'회복',value:'2~3주'}];
+  if (n.includes('윤곽')) return [{label:'방법',value:'골 삭제'},{label:'마취',value:'전신마취'},{label:'회복',value:'4~6주'}];
+  if (n.includes('귀') && (n.includes('성형') || n.includes('수술'))) return [{label:'방법',value:'절개 교정'},{label:'마취',value:'국소마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('이마') && n.includes('지방이식')) return [{label:'방법',value:'자가지방'},{label:'마취',value:'국소마취'},{label:'회복',value:'1~2주'}];
+
+  if (n.includes('FUE') || (n.includes('비절개') && n.includes('모'))) {
+    const mo = (n.match(/(\d[,\d]*)모/) || ['','1,500모'])[1];
+    return [{label:'방법',value:'비절개 FUE'},{label:'이식모수',value:mo+'모'},{label:'생착률',value:'90%↑'}];
+  }
+  if (n.includes('FUT') || (n.includes('절개') && n.includes('고밀도'))) {
+    const mo = (n.match(/(\d[,\d]*)모/) || ['','2,000모'])[1];
+    return [{label:'방법',value:'절개 FUT'},{label:'이식모수',value:mo+'모'},{label:'생착률',value:'95%↑'}];
+  }
+  if (n.includes('여성') && n.includes('헤어라인')) return [{label:'방법',value:'비절개 FUE'},{label:'부위',value:'헤어라인'},{label:'생착률',value:'90%↑'}];
+  if (n.includes('수염이식')) return [{label:'방법',value:'비절개 FUE'},{label:'이식부위',value:'구렛나루'},{label:'생착률',value:'85%↑'}];
+  if (n.includes('눈썹이식')) return [{label:'방법',value:'비절개 FUE'},{label:'이식부위',value:'눈썹'},{label:'생착률',value:'80%↑'}];
+  if (n.includes('DHI')) return [{label:'방법',value:'DHI 전진'},{label:'이식밀도',value:'고밀도'},{label:'생착률',value:'92%↑'}];
+  if (n.includes('PRP')) return [{label:'성분',value:'자가혈'},{label:'횟수',value:'4회'},{label:'1회당',value:perShots(4)}];
+  if (n.includes('메조테라피')) return [{label:'성분',value:'모발영양제'},{label:'횟수',value:'6회'},{label:'1회당',value:perShots(6)}];
+  if (n.includes('1,000모')) return [{label:'방법',value:'비절개 FUE'},{label:'이식모수',value:'1,000모'},{label:'생착률',value:'90%↑'}];
+
+  if (n.includes('입꼬리')) return [{label:'방법',value:'구각 거상'},{label:'마취',value:'국소마취'},{label:'회복',value:'1~2주'}];
+  if (n.includes('보조개')) return [{label:'방법',value:'내부 고정'},{label:'마취',value:'국소마취'},{label:'회복',value:'3~5일'}];
+  if (n.includes('팔자주름') || n.includes('마리오네트')) return [{label:'성분',value:'히알루론산'},{label:'원산지',value:'수입'},{label:'용량',value:'1cc'}];
+  if (n.includes('동안') && n.includes('지방이식')) return [{label:'방법',value:'자가지방'},{label:'부위',value:'눈밑+볼'},{label:'마취',value:'수면마취'}];
+  if (n.includes('스킨부스터') || n.includes('엑소좀')) return [{label:'성분',value:'엑소좀'},{label:'횟수',value:'3회'},{label:'1회당',value:perShots(3)}];
+  if (n.includes('상담') && p === 0) return [{label:'상담',value:'전문의 1:1'},{label:'시뮬레이션',value:'무료'},{label:'시간',value:'30분'}];
+  if (n.includes('미리결제') || n.includes('선결제') || n.includes('선불')) return [{label:'유효기간',value:'12개월'},{label:'취소',value:'3일 전'},{label:'환불',value:'100%'}];
+  if (n.includes('패키지') || n.includes('풀패키지')) return [{label:'수술',value:'다부위'},{label:'마취',value:'전신마취'},{label:'입원',value:'1~2일'}];
+  return [{label:'부위',value:'전얼굴'},{label:'피부타입',value:'모든피부'},{label:'횟수',value:'1회'}];
+}
 
 // ── Icons ──────────────────────────────────────────────────
 function BackIcon() {
@@ -345,6 +465,14 @@ function App() {
                     <button className="bookmark-btn" onClick={e => toggleSave(key, e)}>
                       <BookmarkIcon saved={saved} />
                     </button>
+                  </div>
+                  <div className="options-group">
+                    {getCardOptions(card).map((opt, oi) => (
+                      <div key={oi} className="option-row">
+                        <span className="option-label">{opt.label}</span>
+                        <span className="option-value">{opt.value}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
